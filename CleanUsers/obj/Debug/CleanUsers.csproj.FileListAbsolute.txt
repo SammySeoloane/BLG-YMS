@@ -1,0 +1,16 @@
+C:\Users\sammy\OneDrive - Strategico\Documents\GitHub\CleanUsers\CleanUsers\CleanUsers\bin\Debug\CleanUsers.exe.config
+C:\Users\sammy\OneDrive - Strategico\Documents\GitHub\CleanUsers\CleanUsers\CleanUsers\bin\Debug\CleanUsers.exe
+C:\Users\sammy\OneDrive - Strategico\Documents\GitHub\CleanUsers\CleanUsers\CleanUsers\bin\Debug\CleanUsers.pdb
+C:\Users\sammy\OneDrive - Strategico\Documents\GitHub\CleanUsers\CleanUsers\CleanUsers\obj\Debug\CleanUsers.csproj.AssemblyReference.cache
+C:\Users\sammy\OneDrive - Strategico\Documents\GitHub\CleanUsers\CleanUsers\CleanUsers\obj\Debug\CleanUsers.csproj.CoreCompileInputs.cache
+C:\Users\sammy\OneDrive - Strategico\Documents\GitHub\CleanUsers\CleanUsers\CleanUsers\obj\Debug\CleanUsers.exe
+C:\Users\sammy\OneDrive - Strategico\Documents\GitHub\CleanUsers\CleanUsers\CleanUsers\obj\Debug\CleanUsers.pdb
+C:\Users\sammy\OneDrive - Strategico\Desktop\CleanUsers\CleanUsers\bin\Debug\CleanUsers.exe.config
+C:\Users\sammy\OneDrive - Strategico\Desktop\CleanUsers\CleanUsers\bin\Debug\CleanUsers.exe
+C:\Users\sammy\OneDrive - Strategico\Desktop\CleanUsers\CleanUsers\bin\Debug\CleanUsers.pdb
+C:\Users\sammy\OneDrive - Strategico\Desktop\CleanUsers\CleanUsers\obj\Debug\CleanUsers.csproj.AssemblyReference.cache
+C:\Users\sammy\OneDrive - Strategico\Desktop\CleanUsers\CleanUsers\obj\Debug\CleanUsers.csproj.CoreCompileInputs.cache
+C:\Users\sammy\OneDrive - Strategico\Desktop\CleanUsers\CleanUsers\obj\Debug\CleanUsers.exe
+C:\Users\sammy\OneDrive - Strategico\Desktop\CleanUsers\CleanUsers\obj\Debug\CleanUsers.pdb
+C:\Users\sammy\OneDrive - Strategico\Desktop\CleanUsers\CleanUsers\obj\Debug\CleanUsers.ProjectInstaller.resources
+C:\Users\sammy\OneDrive - Strategico\Desktop\CleanUsers\CleanUsers\obj\Debug\CleanUsers.csproj.GenerateResource.cache

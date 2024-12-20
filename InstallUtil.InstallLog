@@ -1,0 +1,60 @@
+﻿
+Running a transacted installation.
+
+Beginning the Install phase of the installation.
+See the contents of the log file for the C:\Users\sammy\OneDrive - Strategico\Desktop\CleanUsers\CleanUsers\bin\Debug\CleanUsers.exe assembly's progress.
+The file is located at C:\Users\sammy\OneDrive - Strategico\Desktop\CleanUsers\CleanUsers\bin\Debug\CleanUsers.InstallLog.
+
+The Install phase completed successfully, and the Commit phase is beginning.
+See the contents of the log file for the C:\Users\sammy\OneDrive - Strategico\Desktop\CleanUsers\CleanUsers\bin\Debug\CleanUsers.exe assembly's progress.
+The file is located at C:\Users\sammy\OneDrive - Strategico\Desktop\CleanUsers\CleanUsers\bin\Debug\CleanUsers.InstallLog.
+
+The Commit phase completed successfully.
+
+The transacted install has completed.
+
+Running a transacted installation.
+
+Beginning the Install phase of the installation.
+See the contents of the log file for the C:\Users\sammy\OneDrive - Strategico\Desktop\CleanUsers\CleanUsers\bin\Debug\CleanUsers.exe assembly's progress.
+The file is located at C:\Users\sammy\OneDrive - Strategico\Desktop\CleanUsers\CleanUsers\bin\Debug\CleanUsers.InstallLog.
+
+The Install phase completed successfully, and the Commit phase is beginning.
+See the contents of the log file for the C:\Users\sammy\OneDrive - Strategico\Desktop\CleanUsers\CleanUsers\bin\Debug\CleanUsers.exe assembly's progress.
+The file is located at C:\Users\sammy\OneDrive - Strategico\Desktop\CleanUsers\CleanUsers\bin\Debug\CleanUsers.InstallLog.
+
+The Commit phase completed successfully.
+
+The transacted install has completed.
+
+Running a transacted installation.
+
+Beginning the Install phase of the installation.
+See the contents of the log file for the C:\Users\sammy\OneDrive - Strategico\Desktop\CleanUsers\CleanUsers\bin\Debug\CleanUsers.exe assembly's progress.
+The file is located at C:\Users\sammy\OneDrive - Strategico\Desktop\CleanUsers\CleanUsers\bin\Debug\CleanUsers.InstallLog.
+
+The Install phase completed successfully, and the Commit phase is beginning.
+See the contents of the log file for the C:\Users\sammy\OneDrive - Strategico\Desktop\CleanUsers\CleanUsers\bin\Debug\CleanUsers.exe assembly's progress.
+The file is located at C:\Users\sammy\OneDrive - Strategico\Desktop\CleanUsers\CleanUsers\bin\Debug\CleanUsers.InstallLog.
+
+The Commit phase completed successfully.
+
+The transacted install has completed.
+
+Running a transacted installation.
+
+Beginning the Install phase of the installation.
+See the contents of the log file for the C:\Users\sammy\OneDrive - Strategico\Desktop\CleanUsers\CleanUsers\bin\Debug\CleanUsers.exe assembly's progress.
+The file is located at C:\Users\sammy\OneDrive - Strategico\Desktop\CleanUsers\CleanUsers\bin\Debug\CleanUsers.InstallLog.
+
+An exception occurred during the Install phase.
+System.ArgumentOutOfRangeException: Index and length must refer to a location within the string.
+Parameter name: length
+
+The Rollback phase of the installation is beginning.
+See the contents of the log file for the C:\Users\sammy\OneDrive - Strategico\Desktop\CleanUsers\CleanUsers\bin\Debug\CleanUsers.exe assembly's progress.
+The file is located at C:\Users\sammy\OneDrive - Strategico\Desktop\CleanUsers\CleanUsers\bin\Debug\CleanUsers.InstallLog.
+
+The Rollback phase completed successfully.
+
+The transacted install has completed.

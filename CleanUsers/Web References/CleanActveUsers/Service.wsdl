@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://tempuri.org/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="CheckLoginStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="User" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Company" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckLoginStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CheckLoginStatusResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCompany">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCompanyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCompanyResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CleanActiveUser">
+        <s:complexType />
+      </s:element>
+      <s:element name="CleanActiveUserResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="RecordLoginStats">
+        <s:complexType />
+      </s:element>
+      <s:element name="RecordLoginStatsResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="RecordLogin">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SubCompany" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RecordLoginResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="Login">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoginResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RecordPrimaryCompany">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Company" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="License" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserStructure" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="idle" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RecordPrimaryCompanyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RecordPrimaryCompanyResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RecordSubCompany">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Company" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PCompany" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RecordSubCompanyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RecordSubCompanyResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VIReMail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EmailTo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NameTo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SubjectText" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VIReMailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VIReMailResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CheckLoginStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckLoginStatus" />
+  </wsdl:message>
+  <wsdl:message name="CheckLoginStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckLoginStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCompanySoapIn">
+    <wsdl:part name="parameters" element="tns:GetCompany" />
+  </wsdl:message>
+  <wsdl:message name="GetCompanySoapOut">
+    <wsdl:part name="parameters" element="tns:GetCompanyResponse" />
+  </wsdl:message>
+  <wsdl:message name="CleanActiveUserSoapIn">
+    <wsdl:part name="parameters" element="tns:CleanActiveUser" />
+  </wsdl:message>
+  <wsdl:message name="CleanActiveUserSoapOut">
+    <wsdl:part name="parameters" element="tns:CleanActiveUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="RecordLoginStatsSoapIn">
+    <wsdl:part name="parameters" element="tns:RecordLoginStats" />
+  </wsdl:message>
+  <wsdl:message name="RecordLoginStatsSoapOut">
+    <wsdl:part name="parameters" element="tns:RecordLoginStatsResponse" />
+  </wsdl:message>
+  <wsdl:message name="RecordLoginSoapIn">
+    <wsdl:part name="parameters" element="tns:RecordLogin" />
+  </wsdl:message>
+  <wsdl:message name="RecordLoginSoapOut">
+    <wsdl:part name="parameters" element="tns:RecordLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoginSoapIn">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="LoginSoapOut">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="RecordPrimaryCompanySoapIn">
+    <wsdl:part name="parameters" element="tns:RecordPrimaryCompany" />
+  </wsdl:message>
+  <wsdl:message name="RecordPrimaryCompanySoapOut">
+    <wsdl:part name="parameters" element="tns:RecordPrimaryCompanyResponse" />
+  </wsdl:message>
+  <wsdl:message name="RecordSubCompanySoapIn">
+    <wsdl:part name="parameters" element="tns:RecordSubCompany" />
+  </wsdl:message>
+  <wsdl:message name="RecordSubCompanySoapOut">
+    <wsdl:part name="parameters" element="tns:RecordSubCompanyResponse" />
+  </wsdl:message>
+  <wsdl:message name="VIReMailSoapIn">
+    <wsdl:part name="parameters" element="tns:VIReMail" />
+  </wsdl:message>
+  <wsdl:message name="VIReMailSoapOut">
+    <wsdl:part name="parameters" element="tns:VIReMailResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceSoap">
+    <wsdl:operation name="CheckLoginStatus">
+      <wsdl:input message="tns:CheckLoginStatusSoapIn" />
+      <wsdl:output message="tns:CheckLoginStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCompany">
+      <wsdl:input message="tns:GetCompanySoapIn" />
+      <wsdl:output message="tns:GetCompanySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CleanActiveUser">
+      <wsdl:input message="tns:CleanActiveUserSoapIn" />
+      <wsdl:output message="tns:CleanActiveUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RecordLoginStats">
+      <wsdl:input message="tns:RecordLoginStatsSoapIn" />
+      <wsdl:output message="tns:RecordLoginStatsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RecordLogin">
+      <wsdl:input message="tns:RecordLoginSoapIn" />
+      <wsdl:output message="tns:RecordLoginSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <wsdl:input message="tns:LoginSoapIn" />
+      <wsdl:output message="tns:LoginSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RecordPrimaryCompany">
+      <wsdl:input message="tns:RecordPrimaryCompanySoapIn" />
+      <wsdl:output message="tns:RecordPrimaryCompanySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RecordSubCompany">
+      <wsdl:input message="tns:RecordSubCompanySoapIn" />
+      <wsdl:output message="tns:RecordSubCompanySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VIReMail">
+      <wsdl:input message="tns:VIReMailSoapIn" />
+      <wsdl:output message="tns:VIReMailSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceSoap" type="tns:ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CheckLoginStatus">
+      <soap:operation soapAction="http://tempuri.org/CheckLoginStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCompany">
+      <soap:operation soapAction="http://tempuri.org/GetCompany" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CleanActiveUser">
+      <soap:operation soapAction="http://tempuri.org/CleanActiveUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecordLoginStats">
+      <soap:operation soapAction="http://tempuri.org/RecordLoginStats" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecordLogin">
+      <soap:operation soapAction="http://tempuri.org/RecordLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://tempuri.org/Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecordPrimaryCompany">
+      <soap:operation soapAction="http://tempuri.org/RecordPrimaryCompany" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecordSubCompany">
+      <soap:operation soapAction="http://tempuri.org/RecordSubCompany" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VIReMail">
+      <soap:operation soapAction="http://tempuri.org/VIReMail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceSoap12" type="tns:ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CheckLoginStatus">
+      <soap12:operation soapAction="http://tempuri.org/CheckLoginStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCompany">
+      <soap12:operation soapAction="http://tempuri.org/GetCompany" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CleanActiveUser">
+      <soap12:operation soapAction="http://tempuri.org/CleanActiveUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecordLoginStats">
+      <soap12:operation soapAction="http://tempuri.org/RecordLoginStats" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecordLogin">
+      <soap12:operation soapAction="http://tempuri.org/RecordLogin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <soap12:operation soapAction="http://tempuri.org/Login" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecordPrimaryCompany">
+      <soap12:operation soapAction="http://tempuri.org/RecordPrimaryCompany" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecordSubCompany">
+      <soap12:operation soapAction="http://tempuri.org/RecordSubCompany" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VIReMail">
+      <soap12:operation soapAction="http://tempuri.org/VIReMail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="ServiceSoap" binding="tns:ServiceSoap">
+      <soap:address location="https://blg.strategico.co.za/ConcarentUsers/Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceSoap12" binding="tns:ServiceSoap12">
+      <soap12:address location="https://blg.strategico.co.za/ConcarentUsers/Service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
